@@ -1,6 +1,6 @@
 class Category:
     name: str  # Название
-    description: str  # Описанме
+    description: str  # Описание
     products: list  # Список товаров по категориям
     number_of_categories = 0  # Количество категорий
     number_of_products = 0  # Количество товаров
@@ -14,11 +14,11 @@ class Category:
 
 
 if __name__ == "__main__":
-    categoty = Category("оборудование", "музыкальный", ["магнитола", "плеер"])
-    categoty = Category("мебель", "для спальни", ["кровать", "диван"])
+    category = Category("оборудование", "музыкальный", ["магнитола", "плеер"])
+    category = Category("мебель", "для спальни", ["кровать", "диван"])
 
-    print(categoty.name)
-    print(categoty.description)
-    print(categoty.products)
+    print(category.name)
+    print(category.description)
+    print(category.products)
     print(Category.number_of_categories)
     print(Category.number_of_products)
