@@ -1,5 +1,6 @@
 import json
 import os
+from typing import List
 
 from src.Category import Category
 from src.Product import Product
@@ -12,6 +13,18 @@ def read_json(path: str) -> dict:
     return data
 
 
+def product_category_data_json(data):
+    categorys = []
+    for category in data:
+        products = []
+        for product in data("products"):
+            products.append(product(**Product))
+        data("products") = products
+        categorys.append(category(**Category))
+    return categorys
+
+
 if __name__ == '__main__':
-    data = read_json('../data/products.json')
-    print(data)
+    products = read_json('../data/products.json')
+    function = product_category_data_json(products)
+    print(function)

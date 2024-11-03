@@ -11,10 +11,10 @@ class Product:
         self.quantity = quantity
 
 
-# if __name__ == "__main__":
-#     product = Product("Патифон", "старый", 123.3, 3)
-#
-#     print(product.name)
-#     print(product.description)
-#     print(product.prise)
+if __name__ == "__main__":
+    product = Product("Патифон", "старый", 123.3, 3)
+
+    print(product.name)
+    print(product.description)
+    print(product.prise)
 #     print(product.quantity)
