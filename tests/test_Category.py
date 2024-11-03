@@ -12,10 +12,10 @@ def test_Category_count_1(Category_2):
     assert Category_2.description == "для спальни"
     assert Category_2.products == ["кровать", "диван"]
 
+
 def test_Category_count_3(Category_3):
     assert Category_3.name == ""
     assert Category_3.description == ""
     assert Category_3.products == [""]
-
     assert Category.number_of_categories == 2
     assert Category.number_of_products == 2
