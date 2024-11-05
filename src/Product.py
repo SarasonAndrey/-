@@ -1,13 +1,13 @@
 class Product:
     name: str  # Название
     description: str  # Описание
-    prise: float  # Цена
+    price: float  # Цена
     quantity: int  # Колличество в наличии
 
-    def __init__(self, name, description, prise, quantity):
+    def __init__(self, name, description, price, quantity):
         self.name = name
         self.description = description
-        self.prise = prise
+        self.price = price
         self.quantity = quantity
 
 
@@ -16,5 +16,5 @@ class Product:
 #
 #     print(product.name)
 #     print(product.description)
-#     print(product.prise)
+#     print(product.price)
 #     print(product.quantity)
