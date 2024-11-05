@@ -15,12 +15,12 @@ class Category:
         Category.number_of_products = len(self.products)
 
 
-if __name__ == "__main__":
-    category = Category("оборудование", "музыкальный", ["магнитола", "плеер"])
-    category = Category("мебель", "для спальни", ["кровать", "диван"])
-
-    print(category.name)
-    print(category.description)
-    print(category.products)
-    print(Category.number_of_categories)
-    print(Category.number_of_products)
+# if __name__ == "__main__":
+#     category = Category("оборудование", "музыкальный", ["магнитола", "плеер"])
+#     category = Category("мебель", "для спальни", ["кровать", "диван"])
+#
+#     print(category.name)
+#     print(category.description)
+#     print(category.products)
+#     print(Category.number_of_categories)
+#     print(Category.number_of_products)

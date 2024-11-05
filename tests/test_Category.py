@@ -9,7 +9,7 @@ def test_Category2(Category2):
     assert Category2.description == "для спальни"
     assert Category2.products == ["кровать", "диван"]
 
-    assert Category2.number_of_categories == 1
+    assert Category2.number_of_categories == 2
     assert Category2.number_of_products == 2
 
 
