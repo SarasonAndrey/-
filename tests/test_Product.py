@@ -1,4 +1,4 @@
-def test_Product(Product_1):
+def test_Product_init(Product_1):
     assert Product_1.name == "Патифон"
     assert Product_1.description == "старый"
     assert Product_1.prise == "123.3"

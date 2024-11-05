@@ -20,19 +20,19 @@ def Product_3():
 
 
 @pytest.fixture
-def Category_1():
+def Category1():
     return Category(
         name="оборудование", description="музыкальный", products=["магнитола", "плеер"]
     )
 
 
 @pytest.fixture
-def Category_2():
+def Category2():
     return Category(
         name="мебель", description="для спальни", products=["кровать", "диван"]
     )
 
 
 @pytest.fixture
-def Category_3():
+def Category3():
     return Category(name="", description="", products=[""])

@@ -17,4 +17,4 @@ if __name__ == "__main__":
     print(product.name)
     print(product.description)
     print(product.prise)
-#     print(product.quantity)
+    print(product.quantity)
