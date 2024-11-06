@@ -12,7 +12,7 @@ class Category:
         self.products = products
 
         Category.number_of_categories += 1
-        Category.number_of_products = len(self.products)
+        Category.number_of_products += len(self.products)
 
 
 # if __name__ == "__main__":
