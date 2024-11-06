@@ -2,6 +2,7 @@ class Category:
     name: str  # Название
     description: str  # Описание
     products: list  # Список товаров по категориям
+
     number_of_categories = 0  # Количество категорий
     number_of_products = 0  # Количество товаров
 
@@ -9,8 +10,9 @@ class Category:
         self.name = name
         self.description = description
         self.products = products
+
         Category.number_of_categories += 1
-        Category.number_of_products += 1
+        Category.number_of_products += len(self.products)
 
 
 # if __name__ == "__main__":
