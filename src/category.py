@@ -25,9 +25,16 @@ class Category:
     def products(self, products_new: Product):
         if isinstance(products_new, Product):
             self.__products.append(products_new)
-            Category.count_products += 1
+            Category.number_of_products += 1
         else:
             raise TypeError
+
+    @property
+    def products_list(self):
+        products_list = ""
+        for product in self.__products:
+            products_list += f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт.\n"
+        return products_list
 
 
 
@@ -35,10 +42,12 @@ if __name__ == "__main__":
     category = Category("оборудование", "музыкальный", ["магнитола", "плеер"])
     category = Category("мебель", "для спальни", ["кровать", "диван"])
     category = Category("столы", "для кухни", ["складной стол", "стол тумба"])
-
+    products_list = Product("Патифон", "старый", 123.3, 3)
 
     print(category.name)
     print(category.description)
     print(category.products)
     print(Category.number_of_categories)
     print(Category.number_of_products)
+    print(Category.products_list)
+
