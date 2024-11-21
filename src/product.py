@@ -24,11 +24,12 @@ class Product:
             print("Цена не должна быть нулевая или отрицательная")
             return
 
-if __name__ == "__main__":
-    product = Product("Патифон", "старый", 123.3, 3)
 
-    print(product.name)
-    print(product.description)
-    print(product.price)
-    print(product.quantity)
-    print(product.new_product)
+# if __name__ == "__main__":
+#     product = Product("Патифон", "старый", 123.3, 3)
+#
+#     print(product.name)
+#     print(product.description)
+#     print(product.price)
+#     print(product.quantity)
+#     print(product.new_product)

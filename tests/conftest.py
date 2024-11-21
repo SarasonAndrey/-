@@ -20,6 +20,11 @@ def product_3():
 
 
 @pytest.fixture
+def products_new():
+    return Product(name="", description="", price="", quantity="")
+
+
+@pytest.fixture
 def category_1():
     return Category(
         name="оборудование", description="музыкальный", products=["магнитола", "плеер"]

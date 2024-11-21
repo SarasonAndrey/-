@@ -17,3 +17,15 @@ def test_category3(category_3):
     assert category_3.name == ""
     assert category_3.description == ""
     assert category_3.products == [""]
+
+
+def test_category_property(category_1):
+    assert category_1.name == "оборудование"
+    assert category_1.description == "музыкальный"
+    assert category_1.products == ["магнитола", "плеер"]
+
+
+def test_category_setter(category_1, products_new):
+    assert category_1.number_of_products == 2
+    category_1.products = products_new
+    assert category_1.number_of_products == 3

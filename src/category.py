@@ -37,17 +37,15 @@ class Category:
         return products_list
 
 
-
-if __name__ == "__main__":
-    category = Category("оборудование", "музыкальный", ["магнитола", "плеер"])
-    category = Category("мебель", "для спальни", ["кровать", "диван"])
-    category = Category("столы", "для кухни", ["складной стол", "стол тумба"])
-    products_list = Product("Патифон", "старый", 123.3, 3)
-
-    print(category.name)
-    print(category.description)
-    print(category.products)
-    print(Category.number_of_categories)
-    print(Category.number_of_products)
-    print(Category.products_list)
-
+# if __name__ == "__main__":
+#     category = Category("оборудование", "музыкальный", ["магнитола", "плеер"])
+#     category = Category("мебель", "для спальни", ["кровать", "диван"])
+#     category = Category("столы", "для кухни", ["складной стол", "стол тумба"])
+#     products_list = Product("Патифон", "старый", 123.3, 3)
+#
+#     print(category.name)
+#     print(category.description)
+#     print(category.products)
+#     print(Category.number_of_categories)
+#     print(Category.number_of_products)
+#     print(Category.products_list)

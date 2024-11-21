@@ -17,3 +17,10 @@ def test_product3(product_3):
     assert product_3.description == ""
     assert product_3.price == ""
     assert product_3.quantity == ""
+
+
+def test_new_product(product_1):
+    assert product_1.name == "Патифон"
+    assert product_1.description == "старый"
+    assert product_1.price == "123.3"
+    assert product_1.quantity == "3"
