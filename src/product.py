@@ -5,7 +5,7 @@ class Product:
     quantity: int  # Колличество в наличии
 
     def __init__(
-        self, name: object, description: object, price: object, quantity: object
+            self, name: object, description: object, price: object, quantity: object
     ) -> object:
         self.name = name
         self.description = description
@@ -14,8 +14,6 @@ class Product:
 
     def __str__(self):
         return f"{self.name}, {self.price} руб. Остаток: {self.quantity} шт."
-
-
 
     @classmethod
     def new_product(cls, product_data):
@@ -35,3 +33,8 @@ class Product:
             print("Цена не должна быть нулевая или отрицательная")
         else:
             self.__price = value
+
+    def __add__(self, other):
+        if type(other) is Product:
+            return self.__price * self.quantity + other.__price * other.quantity
+        raise TypeError
