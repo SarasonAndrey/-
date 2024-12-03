@@ -5,6 +5,7 @@ def test_category_init(category_1):
 
 
 def test_category2(category_2):
+
     assert category_2.name == "мебель"
     assert category_2.description == "для спальни"
     assert category_2.products == ["кровать", "диван"]

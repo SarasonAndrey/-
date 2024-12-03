@@ -11,7 +11,11 @@ class Product:
         self.quantity = quantity
 
     @classmethod
-    def new_product(cls, name, description, price, quantity):
+    def new_product(cls, product_data):
+        name = product_data.get("name")
+        description = product_data.get("description")
+        price = product_data.get("price")
+        quantity = product_data.get("quantity")
         return cls(name, description, price, quantity)
 
     @property
@@ -23,13 +27,3 @@ class Product:
         if price <= 0:
             print("Цена не должна быть нулевая или отрицательная")
             return
-
-
-# if __name__ == "__main__":
-#     product = Product("Патифон", "старый", 123.3, 3)
-#
-#     print(product.name)
-#     print(product.description)
-#     print(product.price)
-#     print(product.quantity)
-#     print(product.new_product)
