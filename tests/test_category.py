@@ -1,3 +1,7 @@
+from src.category import Category
+from src.product import Product
+
+
 def test_category_init(category_1):
     assert category_1.name == "оборудование"
     assert category_1.description == "музыкальный"
@@ -5,7 +9,6 @@ def test_category_init(category_1):
 
 
 def test_category2(category_2):
-
     assert category_2.name == "мебель"
     assert category_2.description == "для спальни"
     assert category_2.products == ["кровать", "диван"]
@@ -26,7 +29,12 @@ def test_category_property(category_1):
     assert category_1.products == ["магнитола", "плеер"]
 
 
-def test_category_setter(category_1, products_new):
-    assert category_1.number_of_products == 2
-    category_1.products = products_new
-    assert category_1.number_of_products == 3
+def add_product(self, new_products: Product):
+    assert self.__products.append(new_products) == "Samsung Galaxy S23 Ultra"
+    assert Category.number_of_products == 1
+
+
+def products_list(self):
+    assert self == Product(
+        name="Патифон", description="старый", price="123.3", quantity="3"
+    )

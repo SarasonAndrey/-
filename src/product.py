@@ -4,7 +4,9 @@ class Product:
     price: float  # Цена
     quantity: int  # Колличество в наличии
 
-    def __init__(self, name, description, price, quantity):
+    def __init__(
+        self, name: object, description: object, price: object, quantity: object
+    ) -> object:
         self.name = name
         self.description = description
         self.__price = price
