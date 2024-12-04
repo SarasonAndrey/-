@@ -51,7 +51,7 @@ def new_product(cls, product_data):
 
 
 @pytest.fixture
-def test_add_product(self, new_products: Product):
+def add_product(self, new_products: Product):
     return self.__products.append(new_products) == "Samsung Galaxy S23 Ultra"
     return Category.number_of_products == 1
 
@@ -61,3 +61,8 @@ def products_list(self):
     return self == Product(
         name="Патифон", description="старый", price="123.3", quantity="3"
     )
+
+@pytest.fixture
+def __str__(self):
+    return self == Product(name="Патифон", description="старый", price="123.3", quantity="3")
+
