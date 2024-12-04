@@ -29,12 +29,15 @@ def test_category_property(category_1):
     assert category_1.products == ["магнитола", "плеер"]
 
 
-def add_product(self, new_products: Product):
+def test_add_product(self, new_products: Product):
     assert self.__products.append(new_products) == "Samsung Galaxy S23 Ultra"
     assert Category.number_of_products == 1
 
 
-def products_list(self):
+def test_products_list(self):
     assert self == Product(
         name="Патифон", description="старый", price="123.3", quantity="3"
     )
+
+def test___str__(self):
+    assert self == Product(name="Патифон", description="старый", price="123.3", quantity="3")
