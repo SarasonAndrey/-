@@ -1,3 +1,6 @@
+from src.product import Product
+
+
 def test_product_init(product_1):
     assert product_1.name == "Патифон"
     assert product_1.description == "старый"
@@ -20,7 +23,7 @@ def test_product3(product_3):
 
 
 def test_new_product(new_product):
-    assert new_product.name == "Патифон"
+    assert new_product.name == "Гусли"
     assert new_product.description == "старый"
-    assert new_product.price == "123.3"
-    assert new_product.quantity == "3"
+    assert new_product.price == "777777"
+    assert new_product.quantity == "1"
