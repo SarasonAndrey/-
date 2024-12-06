@@ -1,6 +1,3 @@
-from src.product import Product
-
-
 def test_product_init(product_1):
     assert product_1.name == "Патифон"
     assert product_1.description == "старый"

@@ -41,5 +41,5 @@ def test_products_list(product_1):
     assert product_1.quantity == "3"
 
 
-def test_products_list(products_list):
+def test_products_list_(products_list):
     assert Product(name="Патифон", description="старый", price="123.3", quantity="3")
