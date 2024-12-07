@@ -19,8 +19,8 @@ def test_product3(product_3):
     assert product_3.quantity == ""
 
 
-def test_new_product(product_data):
-    assert product_data.name == "Патифон"
-    assert product_data.description == "старый"
-    assert product_data.price == "123.3"
-    assert product_data.quantity == "3"
+def test_new_product(new_product):
+    assert new_product.name == "Гусли"
+    assert new_product.description == "старый"
+    assert new_product.price == "777777"
+    assert new_product.quantity == "1"
