@@ -19,7 +19,10 @@ class Category:
         Category.number_of_products += len(self.__products)
 
     def __str__(self):
-        return f"{self.name}, количество продуктов: {self.number_of_products} шт."
+        total_products = 0
+        for product in self.__products:
+            total_products += product.quantity
+            return f"{self.name}, количество продуктов: {total_products} шт."
 
 
     @property
