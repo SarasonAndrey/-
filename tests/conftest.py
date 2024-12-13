@@ -72,9 +72,13 @@ def category_add(product_1, product_2, product_3):
 
 @pytest.fixture
 def product__str__():
-    return ('Барабан', '200 руб.' 'Остаток: 2 шт.')
+    return ("Барабан", "200 руб." "Остаток: 2 шт.")
 
 
 @pytest.fixture
 def category_01(product_data, new_product, products_list):
-    return Category("оборудование", "музыкальный", [product_data, new_product, products_list],)
+    return Category(
+        "оборудование",
+        "музыкальный",
+        [product_data, new_product, products_list],
+    )

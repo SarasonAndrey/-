@@ -32,10 +32,8 @@ def test_new_product(new_product):
 
 
 def test_product__str__(product__str__):
-    assert product__str__ == ('Барабан', '200 руб.' 'Остаток: 2 шт.')
+    assert product__str__ == ("Барабан", "200 руб." "Остаток: 2 шт.")
 
 
 def test_product_price__add__(product_1, new_product):
-        assert 123.3 * 3 + 777777 * 1 == 778146.9
-
-
+    assert 123.3 * 3 + 777777 * 1 == 778146.9
