@@ -28,7 +28,7 @@ def test_new_product(new_product):
     assert new_product.name == "Гусли"
     assert new_product.description == "старый"
     assert new_product.price == "777777"
-    assert new_product.quantity == "1"
+    assert new_product.quantity == 1
 
 
 def test_product__str__(product__str__):

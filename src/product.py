@@ -38,3 +38,4 @@ class Product:
         if type(other) is Product:
             return self.__price * self.quantity + other.__price * other.quantity
         raise TypeError
+

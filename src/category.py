@@ -24,7 +24,6 @@ class Category:
             total_products += product.quantity
             return f"{self.name}, количество продуктов: {total_products} шт."
 
-
     @property
     def products(self):
         return self.__products
@@ -39,3 +38,5 @@ class Category:
         for product in self.__products:
             products_list += f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт.\n"
         return products_list
+
+
