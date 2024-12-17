@@ -79,7 +79,7 @@ def product__str__():
 
 
 @pytest.fixture
-def category_01(product_data, new_product, products_list):
+def category_01_(product_data, new_product, products_list):
     return Category(
         "оборудование",
         "музыкальный",
