@@ -42,12 +42,14 @@ def category_3():
 
 @pytest.fixture
 def product_data():
-    return Product(name="Патифон", description="старый", price="123.3", quantity="3")
+    return Product(name="Патифон", description="старый", price="123.3", quantity=3)
 
 
 @pytest.fixture
 def new_product():
-    return Product(name="Гусли", description="старый", price="777777", quantity="1")
+
+    return Product(name="Гусли", description="старый", price="777777", quantity=1)
+
 
 
 @pytest.fixture
@@ -58,7 +60,8 @@ def add_product_1(self, new_products: Product):
 
 @pytest.fixture
 def products_list():
-    return Product(name="Патифон", description="старый", price="123.3", quantity="3")
+
+    return Product(name="Патифон", description="старый", price="123.3", quantity=3)
 
 
 @pytest.fixture
@@ -67,4 +70,18 @@ def category_add(product_1, product_2, product_3):
         "оборудование",
         "музыкальный",
         [product_1, product_2, product_3],
+    )
+
+
+@pytest.fixture
+def product__str__():
+    return ("Барабан", "200 руб." "Остаток: 2 шт.")
+
+
+@pytest.fixture
+def category_01(product_data, new_product, products_list):
+    return Category(
+        "оборудование",
+        "музыкальный",
+        [product_data, new_product, products_list],
     )

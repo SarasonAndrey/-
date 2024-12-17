@@ -1,3 +1,5 @@
+import pytest
+
 from src.category import Category
 from src.product import Product
 
@@ -43,3 +45,8 @@ def test_products_list(product_1):
 
 def test_products_list_(products_list):
     assert Product(name="Патифон", description="старый", price="123.3", quantity="3")
+
+
+def test__str__(category_01):
+    assert str(category_01) == "оборудование, количество продуктов: 3 шт."
+
