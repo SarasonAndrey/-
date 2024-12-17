@@ -47,6 +47,6 @@ def test_products_list_(products_list):
     assert Product(name="Патифон", description="старый", price="123.3", quantity="3")
 
 
-def test__str__(category_01):
-    assert str(category_01) == "оборудование, количество продуктов: 3 шт."
+def test__str__(category_01_):
+    assert str(category_01_) == "оборудование, количество продуктов: 7 шт."
 
