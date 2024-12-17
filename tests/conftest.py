@@ -47,7 +47,9 @@ def product_data():
 
 @pytest.fixture
 def new_product():
+
     return Product(name="Гусли", description="старый", price="777777", quantity=1)
+
 
 
 @pytest.fixture
@@ -58,6 +60,7 @@ def add_product_1(self, new_products: Product):
 
 @pytest.fixture
 def products_list():
+
     return Product(name="Патифон", description="старый", price="123.3", quantity=3)
 
 

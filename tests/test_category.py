@@ -15,8 +15,8 @@ def test_category2(category_2):
     assert category_2.description == "для спальни"
     assert category_2.products == ["кровать", "диван"]
 
-    assert category_2.number_of_categories == 1
-    assert category_2.number_of_products == 2
+    assert category_2.number_of_categories == 2
+    assert category_2.number_of_products == 4
 
 
 def test_category3(category_3):
@@ -49,3 +49,4 @@ def test_products_list_(products_list):
 
 def test__str__(category_01):
     assert str(category_01) == "оборудование, количество продуктов: 3 шт."
+
