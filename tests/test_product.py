@@ -1,3 +1,8 @@
+import pytest
+
+from src.product import Product
+
+
 def test_product_init(product_1):
     assert product_1.name == "Патифон"
     assert product_1.description == "старый"
@@ -23,4 +28,13 @@ def test_new_product(new_product):
     assert new_product.name == "Гусли"
     assert new_product.description == "старый"
     assert new_product.price == "777777"
-    assert new_product.quantity == "1"
+
+    assert new_product.quantity == 1
+
+
+def test_product__str__(product__str__):
+    assert product__str__ == ("Барабан", "200 руб." "Остаток: 2 шт.")
+
+
+def test_product_price__add__(product_1, new_product):
+    assert 123.3 * 3 + 777777 * 1 == 778146.9
