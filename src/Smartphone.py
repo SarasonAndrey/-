@@ -3,7 +3,10 @@ from src.product import Product
 
 class Smartphone(Product):  # Смартфон
 
-    def __init__(self, name, discription, price, quantity, efficiency, model, memory, color):
+    def __init__(
+        self, name, discription, price, quantity,
+            efficiency, model, memory, color
+    ):
         super().__init__(name, discription, price, quantity)
         self.efficiency = efficiency  # производительность
         self.model = model  # модель

@@ -51,7 +51,6 @@ def new_product():
     return Product(name="Гусли", description="старый", price="777777", quantity=1)
 
 
-
 @pytest.fixture
 def add_product_1(self, new_products: Product):
     self.__products.append(new_products)

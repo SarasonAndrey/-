@@ -5,8 +5,8 @@ class Product:
     quantity: int  # Колличество в наличии
 
     def __init__(
-            self, name: object, description: object, price: object, quantity: object
-    ) -> object:
+        self, name: object, description: object, price: object,
+            quantity: object) -> object:
         self.name = name
         self.description = description
         self.__price = price
@@ -36,5 +36,6 @@ class Product:
 
     def __add__(self, other):
         if type(other) is Product:
-            return self.__price * self.quantity + other.__price * other.quantity
+            return (self.__price * self.quantity +
+                    other.__price * other.quantity)
         raise TypeError
