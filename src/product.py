@@ -5,7 +5,7 @@ class Product:
     quantity: int  # Колличество в наличии
 
     def __init__(
-        self, name: object, description: object, price: object, quantity: object
+            self, name: object, description: object, price: object, quantity: object
     ) -> object:
         self.name = name
         self.description = description

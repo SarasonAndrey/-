@@ -2,6 +2,7 @@ from src.product import Product
 
 
 class Category:
+    product_count = None
     name: str  # Название
     description: str  # Описание
     products: list  # Список товаров по категориям
@@ -27,6 +28,14 @@ class Category:
     @property
     def products(self):
         return self.__products
+
+    @products.setter
+    def products(self, products_new: Product):
+        if isinstance(products_new, Product):
+            self.__products.append(products_new)
+            Category.product_count += 1
+        else:
+            raise TypeError
 
     def add_product(self, new_products: Product):
         self.__products.append(new_products)
