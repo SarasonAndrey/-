@@ -6,7 +6,7 @@ from src.lawngrass import LawnGrass
 def test_printmixin(capsys):
     Product("Патифон", "старый", "123.3", "3")
     message = capsys.readouterr()
-    assert message.out.strip() == 'Product(Патифон, старый, 123.3, 3)'
+    assert message.out.strip() == "Product(Патифон, старый, 123.3, 3)"
 
     Smartphone(
         "Samsung Galaxy S23 Ultra",
@@ -20,10 +20,22 @@ def test_printmixin(capsys):
     )
     message = capsys.readouterr()
 
-    assert message.out.strip() == 'Smartphone(Samsung Galaxy S23 Ultra, 256GB, Серый цвет, 200MP камера, 180000.0, 5)'
+    assert (
+        message.out.strip()
+        == "Smartphone(Samsung Galaxy S23 Ultra, 256GB, Серый цвет, 200MP камера, 180000.0, 5)"
+    )
 
-    LawnGrass("Газонная трава", "Элитная трава для газона", 500.0,
-              20, "Россия", "7 дней", "Зеленый"
-              )
+    LawnGrass(
+        "Газонная трава",
+        "Элитная трава для газона",
+        500.0,
+        20,
+        "Россия",
+        "7 дней",
+        "Зеленый",
+    )
     message = capsys.readouterr()
-    assert message.out.strip() == 'LawnGrass(Газонная трава, Элитная трава для газона, 500.0, 20)'
+    assert (
+        message.out.strip()
+        == "LawnGrass(Газонная трава, Элитная трава для газона, 500.0, 20)"
+    )
