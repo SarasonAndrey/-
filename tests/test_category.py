@@ -62,5 +62,3 @@ def test_average_price(category_0):
 
 def test_average_price_empty(category_empty):
     assert category_empty.average_price() == 0
-
-
