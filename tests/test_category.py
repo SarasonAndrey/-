@@ -49,3 +49,16 @@ def test_products_list_(products_list):
 
 def test__str__(category_01_):
     assert str(category_01_) == "оборудование, количество продуктов: 7 шт."
+
+
+def test_category_app_error(category_1, products_new):
+    with pytest.raises(TypeError):
+        category_1.products = 1
+
+
+def test_average_price(category_0):
+    assert category_0.average_price() == 195000
+
+
+def test_average_price_empty(category_empty):
+    assert category_empty.average_price() == 0

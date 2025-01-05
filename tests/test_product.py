@@ -36,5 +36,14 @@ def test_product__str__(product__str__):
     assert product__str__ == ("Барабан", "200 руб." "Остаток: 2 шт.")
 
 
-def test_product_price__add__(product_1, new_product):
+def test_product_price__add__(products_list, new_product):
     assert 123.3 * 3 + 777777 * 1 == 778146.9
+
+
+def test_add_product_zero():
+    with pytest.raises(
+        ValueError, match="Товар с нулевым количеством не может быть добавлен"
+    ):
+        Product(
+            "Samsung Galaxy C23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 0
+        )

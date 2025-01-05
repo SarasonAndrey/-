@@ -145,3 +145,52 @@ def grass2():
         "5 дней",
         "Темно-зеленый",
     )
+
+
+@pytest.fixture
+def category_0(product_1, product_2):
+    return Category(
+        "Патифон",
+        "старый",
+        [product_1, product_2],
+    )
+
+
+@pytest.fixture
+def products_new():
+    return Product('45" QLED 4K', "Отличная фоновая подсветка", 133000.0, 5)
+
+
+@pytest.fixture
+def product_smart_1():
+    return Product(
+        "Samsung Galaxy C23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5
+    )
+
+
+@pytest.fixture
+def product_smart_2():
+    return Product("Iphone 15", "512GB, Gray space", 210000.0, 8)
+
+
+@pytest.fixture
+def category_0(product_smart_1, product_smart_2):
+    return Category(
+        "Смартфоны",
+        "Смартфоны, как средство не только коммуникации, но и получение дополнительных функций для удобства жизни",
+        [product_smart_1, product_smart_2],
+    )
+
+
+@pytest.fixture
+def category_empty(product_smart_1, product_smart_2, product_smart_3):
+    return Category(
+        "Смартфоны",
+        "Смартфоны, как средство не только коммуникации, но и получение дополнительных функций для удобства жизни",
+        [],
+    )
+
+
+@pytest.fixture
+def product_smart_3():
+    return Product("Xiaomi Redmi Note 11", "1024GB, Синий", 31000.0, 14)
